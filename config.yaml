@@ -1,11 +1,55 @@
 config:
-  backup: true
-  banner: true
-  create: true
   dotpath: dotfiles
   keepdot: true
-  link_dotfile_default: nolink
-  link_on_import: nolink
-  longkey: false
 dotfiles:
+  f_config.yaml:
+    src: config.yaml
+    dst: ~/config.yaml
+  d_alacritty:
+    src: .config/alacritty
+    dst: ~/.config/alacritty
+  d_autorandr:
+    src: .config/autorandr
+    dst: ~/.config/autorandr
+  d_i3:
+    src: .config/i3
+    dst: ~/.config/i3
+  d_mpd:
+    src: .config/mpd
+    dst: ~/.config/mpd
+  d_picom:
+    src: .config/picom
+    dst: ~/.config/picom
+  d_polybar:
+    src: .config/polybar
+    dst: ~/.config/polybar
+  f_clight.conf:
+    src: .config/clight.conf
+    dst: ~/.config/clight.conf
+  f_zshrc:
+    src: .zshrc
+    dst: ~/.zshrc
+  d_rofi:
+    src: .config/rofi
+    dst: ~/.config/rofi
+  d_networkmanager-dmenu:
+    src: .config/networkmanager-dmenu
+    dst: ~/.config/networkmanager-dmenu
+  f_vimrc:
+    src: .vim/vimrc
+    dst: ~/.vim/vimrc
 profiles:
+  zhang:
+    dotfiles:
+    - f_config.yaml
+    - d_alacritty
+    - d_autorandr
+    - d_i3
+    - d_mpd
+    - d_picom
+    - d_polybar
+    - f_clight.conf
+    - f_zshrc
+    - d_rofi
+    - d_networkmanager-dmenu
+    - f_vimrc

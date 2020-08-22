@@ -1,0 +1,26 @@
+set number
+set cursorline
+set incsearch
+set showcmd
+set wildmenu
+
+set ignorecase
+set smartcase
+
+noremap = nzz
+noremap - Nzz
+
+syntax on
+
+call plug#begin('~/.vim/plugged')
+
+Plug 'vim-airline/vim-airline'
+Plug 'morhetz/gruvbox'
+Plug 'preservim/nerdtree'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'jiangmiao/auto-pairs'
+
+call plug#end()
+
+color gruvbox
+set background=dark

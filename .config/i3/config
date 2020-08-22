@@ -17,7 +17,7 @@ smart_borders on
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 exec --no-startup-id ~/.config/i3/feh.sh
 exec --no-startup-id mpd &
-
+exec --no-startup-id mpc pause
 
 bindsym $mod+x [floating] move scratchpad
 bindsym $mod+Shift+x [floating] scratchpad show
@@ -29,7 +29,7 @@ bindsym $mod+c exec chromium
 bindsym $mod+z exec code
 
 assign [class="Lutris"] 4
-assign [class="暴雪战网"] 4
+assign [title="暴雪战网"] 4
 assign [class="Steam"] 4
 assign [class="Motrix"] 4
 
